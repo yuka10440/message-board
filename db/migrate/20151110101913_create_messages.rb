@@ -2,7 +2,8 @@ class CreateMessages < ActiveRecord::Migration
   def change
     create_table :messages do |t|
       t.string :title
-      t.textsignature :body
+      t.text :body
+      t.string :signatur
 
       t.timestamps null: false
     end
